@@ -5,10 +5,53 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/css/preload.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="webgl"></div>
+    <div class="container">
+      <nav>
+        <div class="logo"><p>webgl</p></div>
+        <div class="menu"><p>menu</p></div>
+      </nav>
+      <h1>website here</h1>
+    </div>
+    <div class="loader">
+      <div class="img">
+        <img src="./src/img/1.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="./src/img/2.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="./src/img/3.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="./src/img/4.png" alt="" />
+      </div>
+      <div class="img">
+        <img src="./src/img/2.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="./src/img/1.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="col">
+        <h2><div>An Experience For You</div></h2>
+        <h2><div>Virtual Tour</div></h2>
+        <h2><div>COffeshop Based in Pontianak</div></h2>
+      </div>
+      <div class="col">
+        <h2>
+          <div><span>Click &nbsp;</span>Anywhere To Continue</div>
+        </h2>
+      </div>
+    </div>
+
+    <!-- <div id="webgl"></div> -->
     <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/preload.js"></script>
   </body>
 </html>
