@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-gsap.from("h2 div", 1.5, {
+gsap.from(".col-preload h2 div", 1.5, {
   yPercent: 100,
   ease: "power4.inOut",
   stagger: {
@@ -8,7 +8,7 @@ gsap.from("h2 div", 1.5, {
   },
 });
 
-gsap.to("h2", 1.5, {
+gsap.to(".col-preload h2", 1.5, {
   clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   ease: "power4.inOut",
   stagger: {
@@ -19,7 +19,7 @@ gsap.to("h2", 1.5, {
 document.addEventListener("DOMContentLoaded", function () {
   let overlay = document.querySelector(".overlay");
   overlay.addEventListener("click", function () {
-    gsap.to("h2 div", 1.5, {
+    gsap.to(".col-preload h2 div", 1.5, {
       yPercent: -100,
       ease: "power4.inOut",
       stagger: {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
     gsap.to(
-      "h2",
+      ".col-preload h2",
       1.5,
       {
         clipPath: "polygon(0% 85%, 100% 85%, 100% 100%, 0% 100%)",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
       ease: "power4.inOut",
     });
-    gsap.to(".img", 2, {
+    gsap.to(".img-preload ", 2, {
       clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
       ease: "power4.inOut",
       stagger: {

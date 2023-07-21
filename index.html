@@ -6,44 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./src/css/preload.css" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
     <title>Vite App</title>
   </head>
   <body>
     <div class="container">
-      <nav>
-        <div class="logo"><p>webgl</p></div>
-        <div class="menu"><p>menu</p></div>
-      </nav>
-      <h1>website here</h1>
+      <div class="logo"><p>webgl</p></div>
+
+      <div class="menu-container">
+        <div class="col col-1">
+          <div class="menu-item" id="menu-toggle">Menu</div>
+        </div>
+        <div class="col col-2">
+          <div class="menu-item" id="close-menu">Close</div>
+          <div class="menu-item">home</div>
+          <div class="menu-item">skills</div>
+          <div class="menu-item">videos</div>
+          <div class="menu-item">faq</div>
+          <div class="menu-item">contanct</div>
+        </div>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee">
+          home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home home
+          home home home home
+        </div>
+      </div>
     </div>
     <div class="loader">
-      <div class="img">
+      <div class="img-preload">
         <img src="./src/img/1.jpg" alt="" />
       </div>
-      <div class="img">
+      <div class="img-preload">
         <img src="./src/img/2.jpg" alt="" />
       </div>
-      <div class="img">
+      <div class="img-preload">
         <img src="./src/img/3.jpg" alt="" />
       </div>
-      <div class="img">
+      <div class="img-preload">
         <img src="./src/img/4.png" alt="" />
       </div>
-      <div class="img">
+      <div class="img-preload">
         <img src="./src/img/2.jpg" alt="" />
       </div>
-      <div class="img">
+      <div class="img-preload">
         <img src="./src/img/1.jpg" alt="" />
       </div>
     </div>
 
     <div class="overlay">
-      <div class="col">
+      <div class="col-preload">
         <h2><div>An Experience For You</div></h2>
         <h2><div>Virtual Tour</div></h2>
         <h2><div>COffeshop Based in Pontianak</div></h2>
       </div>
-      <div class="col">
+      <div class="col-preload">
         <h2>
           <div><span>Click &nbsp;</span>Anywhere To Continue</div>
         </h2>
@@ -53,5 +70,6 @@
     <!-- <div id="webgl"></div> -->
     <script type="module" src="./src/js/main.js"></script>
     <script type="module" src="./src/js/preload.js"></script>
+    <script type="module" src="./src/js/navbar.js"></script>
   </body>
 </html>
